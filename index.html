@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Rowe's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!--Analytics-->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -23,8 +28,8 @@
                 <h2>About Me</h2>
                 <img src="static/Andrew2.png" alt="Self Portrait">
                 <p>
-                    I am a second-year co-op computer engineering student at Concordia University. 
-                    I completed my first year in general engineering at Western University. I have intermediate knowledge in Java, C++, ARM assembly, and object-oriented principles from university courses. 
+                    I am a second-year co-op computer engineering student at Concordia University.
+                    I completed my first year in general engineering at Western University. I have intermediate knowledge in Java, C++, ARM assembly, and object-oriented principles from university courses.
                     I also have basic knowledge in Python and React from hackathons. I am interested in micro-controllers, micro-processors, video games, and the cloud.
                 </p>
 
@@ -53,15 +58,15 @@
                 </div>
                 <div>
                     <p>
-                      Helped create the frontend of a chatbot game to improve doctor and patient interactions for people with rare diseases. 
-                      Worked in a group of 7 Concordia students, including 6 master's students, over one week online through Stack. 
-                      Used Ideation, Planning, Prototyping, Testing, and Deployment under the supervision of two Morgan Stanley employees.
+                        Helped create the frontend of a chatbot game to improve doctor and patient interactions for people with rare diseases.
+                        Worked in a group of 7 Concordia students, including 6 master's students, over one week online through Stack.
+                        Used Ideation, Planning, Prototyping, Testing, and Deployment under the supervision of two Morgan Stanley employees.
                     </p>
                     <p>
-                    <a href="https://galactic-healer.vercel.app/">Demo: Galactic Healer: https://galactic-healer.vercel.app/</a>
+                        <a href="https://galactic-healer.vercel.app/">Demo: Galactic Healer: https://galactic-healer.vercel.app/</a>
                     </p>
                     <p>
-                    <a href="https://docs.google.com/presentation/d/1ETBvQ2OczXz3Mnimi4PTh32PpQJWaLq3HjilF8psrYU/edit?usp=sharing">Presentation: https://docs.google.com/presentation/d/1ETBvQ2OczXz3Mnimi4PTh32PpQJWaLq3HjilF8psrYU/edit?usp=sharing</a>
+                        <a href="https://docs.google.com/presentation/d/1ETBvQ2OczXz3Mnimi4PTh32PpQJWaLq3HjilF8psrYU/edit?usp=sharing">Presentation: https://docs.google.com/presentation/d/1ETBvQ2OczXz3Mnimi4PTh32PpQJWaLq3HjilF8psrYU/edit?usp=sharing</a>
                     </p>
                 </div>
             </div>
@@ -75,7 +80,7 @@
                 </div>
                 <div>
                     <p>
-                        Used a pre-existing model on Jupyter Notebook to classify ASL hand signals by taking pictures of the hand signals. 
+                        Used a pre-existing model on Jupyter Notebook to classify ASL hand signals by taking pictures of the hand signals.
                         Worked on troubleshooting without previous knowledge or courses in computer vision.
                     </p>
                     <a href="https://devpost.com/software/fluentfingers">Demo: https://devpost.com/software/fluentfingers</a>
@@ -86,81 +91,81 @@
 
     <!-- Hackathon Projects Section -->
     <section id="hackathon-projects">
-      <h2>Hackathon Projects</h2>
+        <h2>Hackathon Projects</h2>
 
-      <div class="carousel-wrapper">
-      <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous">&#9664;</button>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous">&#9664;</button>
 
-      <div class="carousel">
-        <div class="carousel-item">
-            <img src="static/galactichealer.png" alt="Galactic Healer">
-            <h3>Galactic Healer</h3>
-            <p>
-                A chatbot game using AI to improve doctor and patient interactions for people with rare diseases. 
-                Has a feedback system with a score for positive interactions.
-            </p>
-            <p>
-                <strong>Note:</strong> The app uses cookies to save data, which was a mistake on desktop because it occasionally lags with the response and showing information. 
-                It works after refreshing. The background refreshes each game. The frontend is basic, but both Hailey and I did not do any frontend coursework.
-            </p>
-            <a href="https://galactic-healer.vercel.app/" class="carousel-link">Demo: Galactic Healer</a>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="static/galactichealer.png" alt="Galactic Healer">
+                    <h3>Galactic Healer</h3>
+                    <p>
+                        A chatbot game using AI to improve doctor and patient interactions for people with rare diseases.
+                        Has a feedback system with a score for positive interactions.
+                    </p>
+                    <p>
+                        <strong>Note:</strong> The app uses cookies to save data, which was a mistake on desktop because it occasionally lags with the response and showing information.
+                        It works after refreshing. The background refreshes each game. The frontend is basic, but both Hailey and I did not do any frontend coursework.
+                    </p>
+                    <a href="https://galactic-healer.vercel.app/" class="carousel-link">Demo: Galactic Healer</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static/fluentfingers.jpeg" alt="Fluent Fingers">
+                    <h3>Fluent Fingers</h3>
+                    <p>
+                        Used a pre-existing model on Jupyter Notebook to classify ASL hand signals by taking pictures of the hand signals.
+                        Worked on troubleshooting without previous knowledge or courses in computer vision.
+                    </p>
+                    <a href="https://devpost.com/software/fluentfingers" class="carousel-link">Demo: Fluent Fingers</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static/lebron.png" alt="Lebron James">
+                    <h3>NBA Shot Tracker</h3>
+                    <p>
+                        Displays shot data of NBA players with player profiles from different seasons for comparison.
+                        I used MongoDB to create an interactive database with react.
+                        Completed at Hacklytics 2024 in Atlanta, GA.
+                    </p>
+                    <a href="https://devfolio.co/projects/nba-shot-tracker-2673" class="carousel-link">Demo: Shot Tracker</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static/nature1.png" alt="Nature">
+                    <h3>Behaviour Wait Time Estimated</h3>
+                    <p>
+                        Uses Flask to display information about a model that estimates the wait time for a gaming match.
+                        Submitted to ConUHacks8
+                    </p>
+                    <a href="https://devpost.com/software/behaviour-waittime-estimated" class="carousel-link">Demo</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static/nature2.png" alt="Nature">
+                    <h3>Predictive Model For Booking Cancellations</h3>
+                    <p>
+                        I Helped create a model to predict hotel bookings and cancellations based on several metrics. I mostly just made suggestions for this hackathon.
+                        Submitted to DataQuest Hackathon at Western University.
+                    </p>
+                    <a href="https://devpost.com/software/predictive-model-for-booking-cancellations" class="carousel-link">Demo</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static/heartbeat.png" alt="Nature">
+                    <h3>Heartbeat</h3>
+                    <p>
+                        Used plotly and streamlit to dsiplay real time banking information using a series of graphs.
+                        Submitted to ConUHacks7. My first hackathon project.
+                    </p>
+                    <a href="https://devpost.com/software/not-as-advertised" class="carousel-link">Demo: Heartbeat</a>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next">&#9654;</button>
         </div>
-
-        <div class="carousel-item">
-          <img src="static/fluentfingers.jpeg" alt="Fluent Fingers">
-          <h3>Fluent Fingers</h3>
-          <p>
-            Used a pre-existing model on Jupyter Notebook to classify ASL hand signals by taking pictures of the hand signals. 
-            Worked on troubleshooting without previous knowledge or courses in computer vision. 
-          </p>
-          <a href="https://devpost.com/software/fluentfingers" class="carousel-link">Demo: Fluent Fingers</a>
-        </div>
-
-        <div class="carousel-item">
-          <img src="static/lebron.png" alt="Lebron James">
-          <h3>NBA Shot Tracker</h3>
-          <p>
-            Displays shot data of NBA players with player profiles from different seasons for comparison.
-            I used MongoDB to create an interactive database with react. 
-            Completed at Hacklytics 2024 in Atlanta, GA.
-          </p>
-          <a href="https://devfolio.co/projects/nba-shot-tracker-2673" class="carousel-link">Demo: Shot Tracker</a>
-        </div>
-
-        <div class="carousel-item">
-          <img src="static/nature1.png" alt="Nature">
-          <h3>Behaviour Wait Time Estimated</h3>
-          <p>
-            Uses Flask to display information about a model that estimates the wait time for a gaming match.
-            Submitted to ConUHacks8
-          </p>
-          <a href="https://devpost.com/software/behaviour-waittime-estimated" class="carousel-link">Demo</a>
-        </div>
-
-        <div class="carousel-item">
-          <img src="static/nature2.png" alt="Nature">
-          <h3>Predictive Model For Booking Cancellations</h3>
-          <p>
-            I Helped create a model to predict hotel bookings and cancellations based on several metrics. I mostly just made suggestions for this hackathon.
-            Submitted to DataQuest Hackathon at Western University.
-          </p>
-          <a href="https://devpost.com/software/predictive-model-for-booking-cancellations" class="carousel-link">Demo</a>
-        </div>
-
-        <div class="carousel-item">
-          <img src="static/heartbeat.png" alt="Nature">
-          <h3>Heartbeat</h3>
-          <p>
-            Used plotly and streamlit to dsiplay real time banking information using a series of graphs.
-            Submitted to ConUHacks7. My first hackathon project.
-          </p>
-          <a href="https://devpost.com/software/not-as-advertised" class="carousel-link">Demo: Heartbeat</a>
-        </div>
-
-      </div>
-
-      <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next">&#9654;</button>
-      </div>
     </section>
 
     <!-- Personal Projects Section -->
@@ -188,7 +193,7 @@
                 <img src="static/mazerunner.png" alt="Maze Runner">
                 <h3>Maze Runner</h3>
                 <p>
-                    Ray tracing game to navigate a 2D maze in 3D using the Windows console. 
+                    Ray tracing game to navigate a 2D maze in 3D using the Windows console.
                     Includes a scrolling map and player position indicator in the top left.
                 </p>
                 <a href="https://github.com/arowe54/Maze_Console_Game">GitHub Repo: https://github.com/arowe54/Maze_Console_Game</a>
@@ -215,5 +220,11 @@
     </footer>
 
     <script src="carousel.js"></script>
+
+    <!--Speed Analytics-->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
