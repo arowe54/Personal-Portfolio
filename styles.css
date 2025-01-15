@@ -1,0 +1,321 @@
+/* General Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  text-align: center;
+}
+
+footer span {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* About Me Section */
+#about-me .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+#about-me .left-column img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#about-me .right-column {
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+#about-me .right-column h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#about-me .right-column p, #about-me .right-column ul {
+  font-size: 16px;
+}
+
+#about-me .right-column textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#about-me .right-column ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#about-me .right-column ul li {
+  margin-bottom: 10px;
+}
+
+/* Awards and Recognition Section */
+#awards-recognition .container {
+  display: flex; /* Use flexbox to lay out the columns */
+  gap: 40px;
+  padding: 40px;
+}
+
+#awards-recognition .left-column,
+#awards-recognition .right-column {
+  flex: 1; /* This ensures that both columns take up equal space */
+  max-width: 800px;
+  padding-left: 20 px;
+  padding-right: 20 px;
+}
+
+#awards-recognition .left-column img,
+#awards-recognition .right-column img {
+  display: block; /* Ensures the images behave as block elements */
+  width: 100%;
+  height: auto;
+  max-height: 400 px;
+  border-radius: 8px;
+}
+
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hackathon Projects Section */
+#hackathon-projects {
+  padding: 40px;
+}
+
+/* Carousel wrapper styles */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden; /* Hide items that go out of bounds */
+  width: 100%; /* Set the width of the visible area */
+}
+
+/* Carousel container (flexbox) */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth scrolling effect */
+  gap: 20px; /* Space between items to prevent overlap */
+}
+
+/* Carousel items */
+.carousel-item {
+  flex: 0 0 calc(33.33% - 20px); /* Takes 1/3 of the width minus spacing */
+  box-sizing: border-box; /* Include padding and border in width */
+  margin-right: 0; /* Ensure no additional spacing messes up layout */
+  background: #fff; /* Optional: Adds contrast to items */
+  border-radius: 8px; /* Optional: Rounded corners for items */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for items */
+  overflow: hidden; /* Hide anything overflowing within items */
+}
+
+/* Carousel images */
+.carousel-item img {
+  width: 100%; /* Ensure images take the full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline display issues */
+  border-bottom: 1px solid #ddd; /* Optional: Divider for the image */
+}
+
+/* Text and links within items */
+.carousel-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.carousel-item a {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.carousel-item a:hover {
+  text-decoration: underline;
+}
+
+.carousel-link {
+  margin-top: auto; /* Push the link to the bottom of the item */
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+/* Common button styles */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Circular buttons */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Left button (Prev) */
+.prev-btn {
+  left: 10px;
+}
+
+/* Right button (Next) */
+.next-btn {
+  right: 10px;
+}
+
+/* For better focus indication */
+.carousel-btn:focus {
+  outline: 2px solid white;
+}
+
+
+
+
+
+
+/* Personal Projects Section */
+#personal-projects .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+.column {
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.column img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.column h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.column a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio Links Section */
+#portfolio-links {
+  padding: 20px;
+  text-align: center;
+}
+
+#portfolio-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+#portfolio-links a:hover {
+  color: #0066cc;
+}
+
+/* Resume Section */
+#resume img {
+  max-width: 50%;
+  display: block;
+  margin: 40px auto;
+  border-radius: 8px;
+  justify-content: center;
+}
